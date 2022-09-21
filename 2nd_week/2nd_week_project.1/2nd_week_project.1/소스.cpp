@@ -3,7 +3,7 @@
 int main(void)
 {
 	printf("StudentID : %d\n", 2021010530);
-	printf("Name : %s\n", "¹ÚÁø¿ì");
+	printf("Name : %s\n", "Park jinwoo");
 	printf("Grade : %c\n", 'A');
 	return 0;
 }
