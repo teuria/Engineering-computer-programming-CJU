@@ -21,6 +21,7 @@ int main(void)
 	double rate;
 	double win = 0;
 	double lose = 0;
+	int attempts = 0;
 	srand(time(0));
 	randnum = (rand() % MAXNUM) + 1;
 	srand(time(0));
@@ -82,7 +83,8 @@ int main(void)
 		{
 			ch++;
 			win++;
-			printf("That's right.\n Your number of attempts is %d\n", win + lose);
+			attempts = win + lose;
+			printf("That's right.\nYour number of attempts is %d\n", attempts);
 			play = 0;
 		}
 	}
