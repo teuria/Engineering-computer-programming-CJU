@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\assignment.2\project#2-4\project.2-4_assginment_code\project.2-4_assginment_code\소스.cpp(14,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  project.2-4_assginment_code.vcxproj -> C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\assignment.2\project#2-4\project.2-4_assginment_code\x64\Debug\project.2-4_assginment_code.exe
