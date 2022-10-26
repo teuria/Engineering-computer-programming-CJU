@@ -14,7 +14,6 @@ int main(void)
 	int count = 0;
 	while (i < ITERATION)
 	{
-		method1:
 		r1 = (double)rand() / MAX;
 		r2 = (double)rand() / MAX;
 
@@ -28,12 +27,11 @@ int main(void)
 			i++;
 		}
 		else if ((k > (0.259 / r1) + 0.35) || (k > -log(r1)))
-			goto method1;
+			continue;
 	}
 	i = 0;
 	while (i < ITERATION)
 	{
-	method2:
 		r1 = (double)rand() / MAX;
 		r2 = (double)rand() / MAX;
 
@@ -47,7 +45,7 @@ int main(void)
 			i++;
 		}
 		else if ((k > (0.259 / r1) + 0.35) || (k > -log(r1)))
-			goto method2;
+			continue;
 	}
 	for (i = 0; i < ITERATION; i++)
 	{
