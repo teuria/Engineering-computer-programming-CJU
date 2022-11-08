@@ -61,9 +61,9 @@ int main(void)
 			ch++;
 			if (ch == chance)
 			{
-				printf("You failed");
+				printf("You failed\n");
 				lose++;
-				printf("You want to try again? (yes = 1 or no = 0): ");
+				printf("Do you want to try again? (yes = 1 or no = 0): ");
 				scanf_s("%d", &answer);
 				if (answer == YES)
 				{
