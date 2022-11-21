@@ -9,7 +9,7 @@
 
 typedef struct student
 {
-    int num;
+    int st_id;
     char name[20];
     int kor, eng, math;
     int total;
@@ -42,8 +42,8 @@ void input_data(Student* pary)
     int i;
     for (i = 0; i < 5; i++)
     {
-        printf("num : ");
-        scanf_s("%d", &pary->num);
+        printf("St_id : ");
+        scanf_s("%d", &pary->st_id);
         printf("name : ");
         scanf("%s", pary->name);
         printf("kor, eng, math scores : ");
@@ -109,7 +109,7 @@ void print_data(Student* pary)
     int i;
     for (i = 0; i < 5; i++)
     {
-        printf("%5d %7s %5d %5d %5d %5d %7.1lf %5c\n",pary->num, pary->name, pary->kor, pary->eng,pary->math, pary->total, pary->avg, pary->grade);
+        printf("%5d %7s %5d %5d %5d %5d %7.1lf %5c\n",pary->st_id, pary->name, pary->kor, pary->eng,pary->math, pary->total, pary->avg, pary->grade);
         pary++;
     }
 }
