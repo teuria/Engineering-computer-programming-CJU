@@ -1,20 +1,58 @@
 #include <stdio.h>
 
-struct book
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4996)
+
+#define MAX 25
+#define NUMBER_OF_BOOKS 3
+
+typedef struct book
 {
-	char title[80];
-	char author[80];
+	char title[MAX];
+	char author[MAX];
 	int page;
 	int price;
-};
+}Book;
+
+void print_data(Book* information);
+void clearBuffer(void);
 
 int main(void)
 {
-	struct book b1 = { "작은 땅의 야수들", "김주혜", 612, 16200 },
-				b2 = { "이토록 평범한 미래", "김연수", 276, 12600 },
-				b3 = { "눈감지 마라", "이기호", 320, 13500 };
-	printf("The first book titile : %s, author : %s, page : %d, price : %d\n", b1.title, b1.author, b1.page, b1.price);
-	printf("The second book titile : %s, author : %s, page : %d, price : %d\n", b2.title, b2.author, b2.page, b2.price);
-	printf("The third book titile : %s, author : %s, page : %d, price : %d\n", b3.title, b3.author, b3.page, b3.price);
+	Book information[NUMBER_OF_BOOKS];
+
+	printf("Enter information about the book.\n");
+	for (int i = 0; i < NUMBER_OF_BOOKS; i++)
+	{
+		fputs("title : ", stdout);
+		fgets(information[i].title, sizeof(information[i].title), stdin);
+		fputs("author : ", stdout);
+		fgets(information[i].author, sizeof(information[i].author), stdin);
+		fputs("page : ", stdout);
+		scanf("%d", &information[i].page);
+		fputs("price : ", stdout);
+		scanf("%d", &information[i].price);
+		printf("\n");
+		clearBuffer();
+	}
+	printf("Output information about the book.\n");
+	print_data(information);
 	return 0;
+}
+
+void print_data(Book *information)
+{
+	for (int i = 0; i < NUMBER_OF_BOOKS; i++)
+	{
+		printf("title : %s", information[i].title);
+		printf("author : %s", information[i].author);
+		printf("page : %d\n", information[i].page);
+		printf("price : %d\n", information[i].price);
+		printf("\n");
+	}
+}
+
+void clearBuffer(void)
+{
+	while (getchar() != '\n');
 }

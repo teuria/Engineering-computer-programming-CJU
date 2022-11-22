@@ -8,7 +8,8 @@ int main(void)
 	COLOR my_color = YELLOW;
 	int c;
 	ARROW direction = UP;
-	int d = direction;
+	int d;
+	d = direction;
 
 	for (c = CYAN; c <= BLACK; c++)
 	{
@@ -18,7 +19,7 @@ int main(void)
 			break;
 	}
 
-	switch (direction)
+	switch (d)
 	{
 		case UP: printf("Current Direction : UP"); 
 			break;

@@ -1,7 +1,2 @@
 ﻿  소스.cpp
-C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\10th_week\10th_week_project.10\10th_week_project.10_code\10th_week_project.10_code\소스.cpp(22,14): warning C4476: 'fscanf' : 서식 지정자에 알 수 없는 형식 필드 문자 '.'이(가) 있습니다.
-C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\10th_week\10th_week_project.10\10th_week_project.10_code\10th_week_project.10_code\소스.cpp(22,14): warning C4477: 'fscanf' : 서식 문자열 '%c'에 'char *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
-C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\10th_week\10th_week_project.10\10th_week_project.10_code\10th_week_project.10_code\소스.cpp(22,14): warning C4477: 'fscanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int'입니다.
-C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\10th_week\10th_week_project.10\10th_week_project.10_code\10th_week_project.10_code\소스.cpp(22,67): warning C4474: 'fscanf' : 서식 문자열에 전달된 인수가 너무 많습니다.
-C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\10th_week\10th_week_project.10\10th_week_project.10_code\10th_week_project.10_code\소스.cpp(22,67): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 3개 필요하지만 4개가 제공되었습니다.
   10th_week_project.10_code.vcxproj -> C:\Users\박진우\OneDrive\문서\GitHub\Engineering_computer_programming_CJU\10th_week\10th_week_project.10\10th_week_project.10_code\x64\Debug\10th_week_project.10_code.exe

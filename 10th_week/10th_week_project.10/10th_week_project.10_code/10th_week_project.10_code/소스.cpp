@@ -17,14 +17,7 @@ int main(void)
 		printf("Failed to open input file.\n");
 		return 1;
 	}
-	for (int i =0; i<4; i++)
-	{
-		fscanf(fp, "%d %.1lf %c %s", &integer, &real_number, character, string);
-	}
-	printf("integer : %d\n", integer);
-	printf("real_number : %.1lf\n", real_number);
-	printf("character : %c\n", character);
-	printf("string : %s\n", string);
+	printf("integer : %d, real_number : %.1lf, character : %c, string : %s\n", integer, real_number, character, string);
 	fclose(fp);
 	return 0;
 }
